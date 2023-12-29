@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Display } from "../Display";
+import AudioRecorder from "../AudioRecorder";
 
 function Header () {
 
@@ -9,11 +10,8 @@ function Header () {
     return(
         <div className="container bg-black">
             <div className="row py-3">
-              <div className="col-4 text-white">
-              <div className="form-check form-switch">
-                  <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked/>
-                  <label className="form-check-label" htmlFor="flexSwitchCheckChecked">Loop</label>
-                </div>
+              <div className="col-4">
+                  <AudioRecorder/>
               </div>
               <Display />
               <div className="col-4 text-white fs-3 d-flex justify-content-end align-items-center">
