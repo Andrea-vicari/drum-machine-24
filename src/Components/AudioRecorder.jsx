@@ -57,7 +57,7 @@ const AudioRecorder = () => {
     return (
         <div className="d-flex">
             <h5 className="text-white">REC</h5>
-            <main>
+
             <div className="audio-controls">
     {!permission ? (
     <button onClick={getMicrophonePermission} type="button">
@@ -83,7 +83,7 @@ const AudioRecorder = () => {
      </a>
 
 ) : null}
-            </main>
+
         </div>
     );
 };

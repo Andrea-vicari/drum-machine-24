@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Display } from "../Display";
 import AudioRecorder from "../AudioRecorder";
+import { LogoTemp } from "../LogoTemp";
 
 function Header () {
 
@@ -10,8 +11,8 @@ function Header () {
     return(
         <div className="container bg-black">
             <div className="row py-3">
-              <div className="col-4">
-                  <AudioRecorder/>
+              <div className="col-4 text-center">
+                  <LogoTemp/>
               </div>
               <Display />
               <div className="col-4 text-white fs-3 d-flex justify-content-end align-items-center">
