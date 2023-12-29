@@ -4,8 +4,8 @@ import Keyboard from "./Keyboard";
 function Home (){
 
     return(
-        <div className="container">
-          <div className="container mx-auto px-2 py-3 bg-black d-flex justify-content-center flex-wrap">
+        <div className="container pt-3">
+          <div className="container mx-auto px-0 py-1 bg-black d-flex justify-content-center flex-wrap">
               <Keyboard />
 
             </div>
