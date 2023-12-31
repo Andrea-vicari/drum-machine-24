@@ -10,6 +10,11 @@
 A DRUM PAD Application built with React and API\
 Editable Keys using Axios and JSON SERVER\
 
+## Node.js Packages
+* react-router-dom
+* Axios
+* JSON-server
+
 
 ## Live demo
 👉👉👉 <br>

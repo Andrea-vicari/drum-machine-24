@@ -2,10 +2,6 @@ import React from "react";
 import mp3List from "./mp3.json";
 import keyList from "./keyList.json";
 
-
-
-
-
 function DashBoard (){
 
     return(
