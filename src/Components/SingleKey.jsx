@@ -4,6 +4,10 @@ import mp3List from "./mp3.json";
 
 function SingleKey (){
 
+    const [isRunning, setIsRunning] = useState(true);
+
+
+
     function startConter(endTime,i){
 
         var obj = 0;
@@ -12,23 +16,23 @@ function SingleKey (){
         setInterval(function(){
            current++;
            obj = current;
-           console.log(obj)
+
 
             if(obj == endTime){
-
+                console.log(obj)
                 document.getElementById(i+300).classList.add("d-none");
                 document.getElementById(i+200).classList.remove("playing");
                // alert('STOP COUNT !!!')
-                return
+               return ()=>{
+                clearInterval(setInterval);
             }
+            }
+
+
 
         },1000);
 
-        clearInterval(setInterval);
-        return
-
       }
-
 
 
     const playSound = (i, trackName) => {
@@ -46,6 +50,7 @@ function SingleKey (){
         mp3_toplay.play();
         var MP3_duration = document.getElementById(i).duration;
         console.log(MP3_duration);
+
         startConter(Math.floor(MP3_duration),i)
 
     }
