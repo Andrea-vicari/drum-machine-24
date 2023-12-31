@@ -18,7 +18,7 @@ function Header () {
               <div className="col-4 text-white fs-3 d-flex justify-content-end align-items-center">
               <i className="fa fa-bars text-blue-react" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDark" aria-controls="offcanvasDark"></i>
 
-                    <div className="offcanvas offcanvas-end offcanvas-dark bg-black" data-bs-scroll="true" tabIndex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel">
+                    <div className="offcanvas offcanvas-top offcanvas-dark bg-black" data-bs-scroll="true" tabIndex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel">
                       <div className="offcanvas-header">
                         <h5 className="offcanvas-title text-white" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
                         <i type="button" className="fa fa-times btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></i>

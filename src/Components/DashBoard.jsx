@@ -1,8 +1,11 @@
 import React from "react";
 import mp3List from "./mp3.json";
 import keyList from "./keyList.json";
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 function DashBoard (){
+
+  const navigate = useNavigate();
 
     return(
       <div className="container mx-auto px-3 py-3 bg-black">
@@ -15,7 +18,7 @@ function DashBoard (){
                     <div className="card">
                         <h5 className="card-header">{e.id}</h5>
                         <div className="card-body">
-                          <a href="#" className="btn btn-primary">Edit</a>
+                          <Link to={`/update/${e.id}`} className="btn btn-primary">Edit</Link>
                         </div>
                       </div>
 
