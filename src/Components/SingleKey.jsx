@@ -1,8 +1,10 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import mp3List from "./mp3.json";
+import mp3List from "./db.json";
 
 function SingleKey (){
+
+    console.log(mp3List)
 
     const [isRunning, setIsRunning] = useState(true);
 
@@ -57,7 +59,7 @@ function SingleKey (){
 
 
     return(
-        mp3List.map((d, i) => (
+        mp3List.tracks.map((d, i) => (
             <div key={d.id} id={100+i}>
                 <button id={200+i} className="btn btn-success active btn-sq-responsive" onClick={() => playSound(i, d.trackName)}>
                 <span id={i+300} className="spinner-border d-none spinner-border-sm" aria-hidden="true"></span>
