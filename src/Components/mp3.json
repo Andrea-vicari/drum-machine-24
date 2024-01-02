@@ -74,5 +74,13 @@
     {"trackURL": "/tracks/timbo-drumline-loop-103bpm-171091.mp3",
     "id": 19,
     "trackName": "TimboDrum",
-    "bpm": 103}
+    "bpm": 103},
+    {"trackURL": "/tracks/trap130bpm-32062.mp3",
+    "id": 20,
+    "trackName": "Trap130",
+    "bpm": 130},
+    {"trackURL": "/tracks/typical-trap-loop-2b-130751.mp3",
+    "id": 21,
+    "trackName": "TrapLoop",
+    "bpm": 130}
 ]}

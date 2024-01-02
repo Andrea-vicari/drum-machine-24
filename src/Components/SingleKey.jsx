@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import axios from 'axios'
+import axios from 'axios';
+import { outVolume } from './Volume.jsx';
 
 function SingleKey (){
 
@@ -47,13 +48,14 @@ function SingleKey (){
         document.getElementById(i+300).classList.remove("d-none");
         document.getElementById(i+200).classList.add("playing");
 
-        document.getElementById('MP3_display').innerHTML = `${trackName}`;
+
 
         console.log(i);
 
         let mp3_toplay = document.getElementById(trackID);
         console.log(mp3_toplay)
-       // mp3_toplay.loop = true;
+        console.log(outVolume/100)
+        mp3_toplay.volume = outVolume/100;
         mp3_toplay.play();
         var MP3_duration = document.getElementById(trackID).duration;
         console.log(MP3_duration);
@@ -66,7 +68,7 @@ function SingleKey (){
     return(
         data.map((d, i) => (
             <div key={d.id} id={100+i}>
-                <button id={200+i} className="btn btn-success active btn-sq-responsive" onClick={() => playSound(i, d.trackName, d.id)}>
+                <button id={200+i} className="btn btn-primary active btn-sq-responsive" onClick={() => playSound(i, d.trackName, d.id)}>
                 <span id={i+300} className="spinner-border d-none spinner-border-sm" aria-hidden="true"></span>
                 <audio className="clip" id={d.id} src={d.trackURL}></audio>
                 </button>

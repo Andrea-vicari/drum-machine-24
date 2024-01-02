@@ -11,7 +11,7 @@ function Update (){
 
     const [inputData, setInputData] = useState({
         id: id,
-        trackURL: '',
+        trackURL: ''
 
     })
     const navigate = useNavigate();
@@ -28,7 +28,7 @@ function Update (){
         axios.put('http://localhost:3000/tracks/'+id , inputData)
         .then(res => {
             alert("Data Updated Successfully!")
-            navigate('/Dashboard')
+            navigate('/')
         })
     }
 

@@ -2,7 +2,7 @@
   "tracks": [
     {
       "id": "Key 1",
-      "trackURL": "/tracks/timbo-drumline-loop-103bpm-171091.mp3"
+      "trackURL": "/tracks/sydance1_123bpm-31783.mp3"
     },
     {
       "id": "Key 2",
@@ -10,19 +10,19 @@
     },
     {
       "id": "Key 3",
-      "trackURL": "/tracks/sydance1_123bpm-31783.mp3"
+      "trackURL": "/tracks/synth-pad-loop-88710.mp3"
     },
     {
       "id": "Key 4",
-      "trackURL": ""
+      "trackURL": "/tracks/trap130bpm-32062.mp3"
     },
     {
       "id": "Key 5",
-      "trackURL": ""
+      "trackURL": "/tracks/hip-hop-beat-100bpm-96880.mp3"
     },
     {
       "id": "Key 6",
-      "trackURL": "/tracks/glockenspiel-melody-140bpm-28185.mp3"
+      "trackURL": "/tracks/sydance1_123bpm-31783.mp3"
     },
     {
       "id": "Key 7",
@@ -30,7 +30,7 @@
     },
     {
       "id": "Key 8",
-      "trackURL": "/tracks/hip-hop-drums-loop-bpm-140-5-179398.mp3"
+      "trackURL": "/tracks/pluck-loop-91bpm-132429.mp3"
     },
     {
       "id": "Key 9",
@@ -38,7 +38,7 @@
     },
     {
       "id": "Key 10",
-      "trackURL": "/tracks/house-beat-sample-with-bassline-31650.mp3"
+      "trackURL": "/tracks/synth-pad-loop-88710.mp3"
     },
     {
       "id": "Key 11",
@@ -58,7 +58,7 @@
     },
     {
       "id": "Key 15",
-      "trackURL": ""
+      "trackURL": "/tracks/synth-pad-loop-88710.mp3"
     }
   ]
 }
