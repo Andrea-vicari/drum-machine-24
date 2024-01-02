@@ -62,5 +62,17 @@
     {"trackURL": "/tracks/sydance1_123bpm-31783.mp3",
     "id": 16,
     "trackName": "Sydance",
-    "bpm": 123}
+    "bpm": 123},
+    {"trackURL": "/tracks/synth-pad-loop-88710.mp3",
+    "id": 17,
+    "trackName": "SyntPad",
+    "bpm": 0},
+    {"trackURL": "/tracks/techno-drums-loop-120-bpm-1-131243.mp3",
+    "id": 18,
+    "trackName": "TechnoLoop120",
+    "bpm": 120},
+    {"trackURL": "/tracks/timbo-drumline-loop-103bpm-171091.mp3",
+    "id": 19,
+    "trackName": "TimboDrum",
+    "bpm": 103}
 ]}
