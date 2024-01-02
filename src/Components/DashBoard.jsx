@@ -12,7 +12,7 @@ function DashBoard (){
     const navigate = useNavigate();
 
     useEffect(()=> {
-        axios.get('https://drum-machine-24.vercel.app/tracks')
+        axios.get('tracks')
         .then(res => setData(res.data))
         .catch(err => console.log(err))
     }, [])
