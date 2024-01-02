@@ -1,12 +1,19 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import mp3List from "./db.json";
+import axios from 'axios'
 
 function SingleKey (){
 
-    console.log(mp3List)
+    const [data, setData] = useState([])
 
-    const [isRunning, setIsRunning] = useState(true);
+
+    useEffect(()=> {
+        axios.get('http://localhost:3000/tracks')
+        .then(res => setData(res.data))
+        .catch(err => console.log(err))
+    }, [])
+
+    console.log(data)
 
 
 
@@ -30,14 +37,12 @@ function SingleKey (){
             }
             }
 
-
-
         },1000);
 
       }
 
 
-    const playSound = (i, trackName) => {
+    const playSound = (i, trackName, trackID) => {
 
         document.getElementById(i+300).classList.remove("d-none");
         document.getElementById(i+200).classList.add("playing");
@@ -46,11 +51,11 @@ function SingleKey (){
 
         console.log(i);
 
-        let mp3_toplay = document.getElementById(i);
+        let mp3_toplay = document.getElementById(trackID);
         console.log(mp3_toplay)
        // mp3_toplay.loop = true;
         mp3_toplay.play();
-        var MP3_duration = document.getElementById(i).duration;
+        var MP3_duration = document.getElementById(trackID).duration;
         console.log(MP3_duration);
 
         startConter(Math.floor(MP3_duration),i)
@@ -59,11 +64,11 @@ function SingleKey (){
 
 
     return(
-        mp3List.tracks.map((d, i) => (
+        data.map((d, i) => (
             <div key={d.id} id={100+i}>
-                <button id={200+i} className="btn btn-success active btn-sq-responsive" onClick={() => playSound(i, d.trackName)}>
+                <button id={200+i} className="btn btn-success active btn-sq-responsive" onClick={() => playSound(i, d.trackName, d.id)}>
                 <span id={i+300} className="spinner-border d-none spinner-border-sm" aria-hidden="true"></span>
-                <audio className="clip" id={i} src={d.trackURL}></audio>
+                <audio className="clip" id={d.id} src={d.trackURL}></audio>
                 </button>
             </div>
 

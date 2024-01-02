@@ -10,14 +10,15 @@ function Update (){
 
     const [inputData, setInputData] = useState({
         id: id,
-        name: '',
-        email: ''
+        trackURL: '',
+
     })
     const navigate = useNavigate();
 
     useEffect(() => {
         axios.get('http://localhost:3030/tracks/'+id)
         .then(res => setInputData(res.data))
+        .then(console.log(inputData))
         .catch(err => console.log(err))
     }, [])
 
@@ -38,8 +39,10 @@ function Update (){
                     <h1 className="h3 mb-3 text-white">Edit: {id}</h1>
                     <p className="text-white">Choose the Track for this key</p>
                     <div className="form-floating">
+
+
                     <select className="form-select mb-2" aria-label="Default select example">
-                        <option value="1">One</option>
+
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
