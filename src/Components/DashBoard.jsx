@@ -12,7 +12,7 @@ function DashBoard (){
     const navigate = useNavigate();
 
     useEffect(()=> {
-        axios.get('http://localhost:3000/tracks')
+        axios.get('/tracks')
         .then(res => setData(res.data))
         .catch(err => console.log(err))
     }, [])
