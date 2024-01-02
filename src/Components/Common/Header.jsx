@@ -14,7 +14,7 @@ function Header () {
 
               <div className="col-4 text-white fs-3 d-flex justify-content-end align-items-center">
               <Link to="/Dashboard">
-              <i className="fa fa-cog text-white fs-4"></i>
+              <i className="fa fa-cog orange fs-4"></i>
               </Link>
               </div>
           </div>

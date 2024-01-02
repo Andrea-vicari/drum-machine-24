@@ -55,13 +55,13 @@ const AudioRecorder = () => {
         };
       };
     return (
-        <div className="d-flex">
+        <div className="col-4 text-center d-flex justify-content-end align-items-end">
             <h5 className="text-white">REC</h5>
 
             <div className="audio-controls">
     {!permission ? (
     <button onClick={getMicrophonePermission} type="button">
-        Get Microphone
+        Mic
     </button>
     ) : null}
     {permission && recordingStatus === "inactive" ? (

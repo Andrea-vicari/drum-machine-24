@@ -68,7 +68,7 @@ function SingleKey (){
     return(
         data.map((d, i) => (
             <div key={d.id} id={100+i}>
-                <button id={200+i} className="btn btn-primary active btn-sq-responsive" onClick={() => playSound(i, d.trackName, d.id)}>
+                <button id={200+i} className="btn btn-danger active btn-sq-responsive" onClick={() => playSound(i, d.trackName, d.id)}>
                 <span id={i+300} className="spinner-border d-none spinner-border-sm" aria-hidden="true"></span>
                 <audio className="clip" id={d.id} src={d.trackURL}></audio>
                 </button>
