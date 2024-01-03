@@ -9,6 +9,8 @@ function Update (){
 
     const {id} = useParams();
 
+    console.log(id)
+
     const [inputData, setInputData] = useState({
         id: id,
         trackURL: ''
@@ -17,7 +19,7 @@ function Update (){
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('https://drum-machine-24.vercel.app/'+id)
+        axios.get('http://localhost:3000/tracks'+id)
         .then(res => setInputData(res.data))
         .then(console.log(inputData))
         .catch(err => console.log(err))
@@ -25,7 +27,7 @@ function Update (){
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        axios.put('https://drum-machine-24.vercel.app/'+id , inputData)
+        axios.put('http://localhost:3000/tracks/'+id , inputData)
         .then(res => {
             alert("Data Updated Successfully!")
             navigate('/')

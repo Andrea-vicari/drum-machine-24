@@ -12,7 +12,7 @@ function DashBoard (){
     const navigate = useNavigate();
 
     useEffect(()=> {
-        axios.get('https://drum-machine-24.vercel.app/')
+        axios.get('http://localhost:3000/tracks')
         .then(res => setData(res.data))
         .catch(err => console.log(err))
     }, [])
@@ -29,11 +29,11 @@ function DashBoard (){
           <div className="row mb-3 text-center">
           {keyList.map((e)=>{
                   return (
-                    <div className="col-4 mb-2" key={e.id}>
+                    <div className="col-4 mb-2">
                     <div className="card">
                         <h5 className="card-header">{e.id}</h5>
                         <div className="card-body">
-                          <Link to={`/update/${e.id}`} className="btn btn-primary">Edit</Link>
+                          <Link to={`/update/`} className="btn btn-primary">Edit</Link>
                         </div>
                       </div>
 
