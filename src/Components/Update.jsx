@@ -19,7 +19,7 @@ function Update (){
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('http://localhost:3000/tracks'+id)
+        axios.get('/tracks'+id)
         .then(res => setInputData(res.data))
         .then(console.log(inputData))
         .catch(err => console.log(err))

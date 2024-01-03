@@ -33,7 +33,7 @@ function DashBoard (){
                     <div className="card">
                         <h5 className="card-header">{e.id}</h5>
                         <div className="card-body">
-                          <Link to={`/update/`} className="btn btn-primary">Edit</Link>
+                          <Link to={`/update/${e.id}`} className="btn btn-primary">Edit</Link>
                         </div>
                       </div>
 
