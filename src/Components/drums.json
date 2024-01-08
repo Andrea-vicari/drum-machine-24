@@ -1,0 +1,14 @@
+{"drums":[
+    {"trackURL": "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3",
+    "id": "drum-1",
+    "trackName": "Heater1",
+    "bpm": 0},
+    {"trackURL": "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3",
+    "id": "drum-2",
+    "trackName": "Heater2",
+    "bpm": 0},
+    {"trackURL": "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3",
+    "id": "drum-3",
+    "trackName": "Heater3",
+    "bpm": 0}
+]}

@@ -27,7 +27,7 @@ function DashBoard (){
           </p>
 
           <div className="row mb-3 text-center">
-          {keyList.map((e)=>{
+          {data.map((e)=>{
                   return (
                     <div className="col-4 mb-2">
                     <div className="card">
