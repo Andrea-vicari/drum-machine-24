@@ -7,7 +7,7 @@ function Keyboard (){
     return(
         <React.Fragment>
 
-           <SingleKey />
+           <SingleKeyLoop />
         </React.Fragment>
       )
 }
