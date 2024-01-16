@@ -1,19 +1,130 @@
 {
-  "tracks":[
-  {"id": "Key 1","trackURL": "/tracks/90s-beat-loop-140bpm-72870.mp3"},
-  {"id": "Key 2","trackURL":"/tracks/bass-loop-002-dry-120-bpm-38078.mp3"},
-  {"id": "Key 3","trackURL":"/tracks/drum-and-bass-drums-loop-3-bpm-160-181066.mp3"},
-  {"id": "Key 4","trackURL":"/tracks/drum-and-bass-drums-loop-4-bpm-140-181065.mp3"},
-  {"id": "Key 5","trackURL":"/tracks/drum-beat-bpm-120-113150.mp3"},
-  {"id": "Key 6","trackURL":"/tracks/glockenspiel-melody-140bpm-28185.mp3"},
-  {"id": "Key 7","trackURL":"/tracks/hip-hop-beat-100bpm-96880.mp3"},
-  {"id": "Key 8","trackURL":"/tracks/hip-hop-drums-loop-bpm-140-5-179398.mp3"},
-  {"id": "Key 9","trackURL":"/tracks/hip-vocal-eletric-dance-loop-100-bpm_01-96212.mp3"},
-  {"id": "Key 10","trackURL":"/tracks/house-beat-sample-with-bassline-31650.mp3"},
-  {"id": "Key 11","trackURL":"/tracks/klavier-loop-122-bpm-8966.mp3"},
-  {"id": "Key 12","trackURL":"/tracks/pluck-loop-91bpm-132429.mp3"},
-  {"id": "Key 13","trackURL":"/tracks/psy-bass-beat-sample-101275.mp3"},
-  {"id": "Key 14","trackURL":"/tracks/quest-luv-loop-4-170bpm-119701.mp3"},
-  {"id": "Key 15","trackURL":"/tracks/sunflower-street-drumloop-85bpm-163900.mp3"}
+  "tracks": [
+    {
+      "trackURL": "/tracks/typical-trap-loop-2b-130751.mp3",
+      "id": "Key1",
+      "trackName": "90s-beat",
+      "bpm": 140
+    },
+    {
+      "trackURL": "/tracks/quest-luv-loop-4-170bpm-119701.mp3",
+      "id": "Key2",
+      "trackName": "BassLoop120",
+      "bpm": 120
+    },
+    {
+      "trackURL": "/tracks/drum-and-bass-drums-loop-3-bpm-160-181066.mp3",
+      "id": "Key3",
+      "trackName": "DNBLoop160",
+      "bpm": 160
+    },
+    {
+      "trackURL": "/tracks/drum-and-bass-drums-loop-4-bpm-140-181065.mp3",
+      "id": "Key4",
+      "trackName": "DNBLoop140",
+      "bpm": 140
+    },
+    {
+      "trackURL": "/tracks/drum-beat-bpm-120-113150.mp3",
+      "id": 5,
+      "trackName": "DrumBeat120",
+      "bpm": 120
+    },
+    {
+      "trackURL": "/tracks/glockenspiel-melody-140bpm-28185.mp3",
+      "id": 6,
+      "trackName": "Melodie140",
+      "bpm": 140
+    },
+    {
+      "trackURL": "/tracks/hip-hop-beat-100bpm-96880.mp3",
+      "id": 7,
+      "trackName": "HipHop100",
+      "bpm": 100
+    },
+    {
+      "trackURL": "/tracks/hip-hop-drums-loop-bpm-140-5-179398.mp3",
+      "id": 8,
+      "trackName": "HipHop140",
+      "bpm": 140
+    },
+    {
+      "trackURL": "/tracks/hip-vocal-eletric-dance-loop-100-bpm_01-96212.mp3",
+      "id": 9,
+      "trackName": "ElectroVocal",
+      "bpm": 100
+    },
+    {
+      "trackURL": "/tracks/house-beat-sample-with-bassline-31650.mp3",
+      "id": 10,
+      "trackName": "HouseSample",
+      "bpm": 100
+    },
+    {
+      "trackURL": "/tracks/klavier-loop-122-bpm-8966.mp3",
+      "id": 11,
+      "trackName": "KalvierLoop",
+      "bpm": 122
+    },
+    {
+      "trackURL": "/tracks/pluck-loop-91bpm-132429.mp3",
+      "id": 12,
+      "trackName": "PluckLoop",
+      "bpm": 91
+    },
+    {
+      "trackURL": "/tracks/psy-bass-beat-sample-101275.mp3",
+      "id": 13,
+      "trackName": "PsyBass",
+      "bpm": 101
+    },
+    {
+      "trackURL": "/tracks/quest-luv-loop-4-170bpm-119701.mp3",
+      "id": 14,
+      "trackName": "QuestLoop",
+      "bpm": 170
+    },
+    {
+      "trackURL": "/tracks/sunflower-street-drumloop-85bpm-163900.mp3",
+      "id": 15,
+      "trackName": "StreetLoop",
+      "bpm": 85
+    },
+    {
+      "trackURL": "/tracks/sydance1_123bpm-31783.mp3",
+      "id": 16,
+      "trackName": "Sydance",
+      "bpm": 123
+    },
+    {
+      "trackURL": "/tracks/synth-pad-loop-88710.mp3",
+      "id": 17,
+      "trackName": "SyntPad",
+      "bpm": 0
+    },
+    {
+      "trackURL": "/tracks/techno-drums-loop-120-bpm-1-131243.mp3",
+      "id": 18,
+      "trackName": "TechnoLoop120",
+      "bpm": 120
+    },
+    {
+      "trackURL": "/tracks/timbo-drumline-loop-103bpm-171091.mp3",
+      "id": 19,
+      "trackName": "TimboDrum",
+      "bpm": 103
+    },
+    {
+      "trackURL": "/tracks/trap130bpm-32062.mp3",
+      "id": 20,
+      "trackName": "Trap130",
+      "bpm": 130
+    },
+    {
+      "trackURL": "/tracks/typical-trap-loop-2b-130751.mp3",
+      "id": 21,
+      "trackName": "TrapLoop",
+      "bpm": 130
+    }
   ]
 }
