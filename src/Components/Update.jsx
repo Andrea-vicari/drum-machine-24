@@ -16,7 +16,7 @@ function Update (){
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('http://localhost:3030/tracks/'+id)
+        axios.get('http://localhost:3000/tracks/'+id)
         .then(res => setInputData(res.data))
         .then(console.log(inputData))
         .catch(err => console.log(err))
@@ -24,7 +24,7 @@ function Update (){
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        axios.put('http://localhost:3030/tracks/'+id , inputData)
+        axios.put('http://localhost:3000/tracks/'+id , inputData)
         .then(res => {
             alert("Data Updated Successfully!")
             navigate('/')
