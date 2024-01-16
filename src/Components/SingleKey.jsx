@@ -8,7 +8,7 @@ function SingleKey (){
 
 
     useEffect(()=> {
-        axios.get('https://drum-machine-24.vercel.app/tracks')
+        axios.get('http://localhost:3000/tracks')
         .then(res => setData(res.data))
         .catch(err => console.log(err))
     }, [])
